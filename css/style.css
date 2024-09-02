@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Moderustic", system-ui;
+    scroll-behavior: smooth;
+
+}
+@media(max-width:1200px){
+    .nav-links li a{
+        display: none;
+    }
+    
+}
+@media(min-width:400px){
+    nav {
+            padding: 0 50px;
+        }
+}
+
+/* home section  */
+header{
+    background: url(../img/view-3d-film-reel.jpg) no-repeat;
+    background-size: cover;
+    box-pack: 50% 50%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 5;
+    display: flex;justify-content: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #ce8f5b78;
+    position: fixed;
+    z-index: 10;
+    
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 12px;
+}
+.nav-links li{
+    /* background-color: #e5ad7f69; */
+    margin: 0 7px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.nav-links li:hover{
+    background-color:#ce8f5b99 ;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.nav-links li a{
+    color: #fff;
+}
+span{
+/* background-color: greenyellow;  */
+   position: relative;
+   padding: 5px 30px;
+   align-items: center;
+  
+}
+input[type="search"]{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    outline-color: #ce8f5b99;
+}
+.searchbar{
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+.home_card{
+    /* background-color: orange; */
+    width: 100%;
+    padding:0 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    align-items: center;
+   
+}
+.home-image{
+    /* width: 500px; */
+    flex-basis: 800px;
+    flex: 2 0 20rem;
+    /* height: 500px; */
+    background-color: red;
+    background: url(../img/Tom-Holland-Spiderman.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    border-radius: px;
+
+}
+.home-image:hover .home-image_actor{
+    transform: translateX(0%);
+    transition: 0.4s;
+}
+.home-image_actor{
+    padding: 20px ;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    /* background-color: orange; */
+    /* opacity: 0.5; */
+    height: 100%;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.home-image_actor > h1{
+    color: red;
+    margin: 15px 0;
+}
+.home-image_actor p{
+    color: #fff;
+    /* line-height: 30px; */
+
+}
+.home-info {
+    padding: 25px 30px;
+    /* width: 500px; */
+    flex-basis: 300px;
+    flex: 1 0 20rem;
+    /* height: 500px; */
+    /* background-color: blue; */
+    /* backdrop-filter: blur(10px); */
+    /* border: 1px solid gray; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: start;
+
+}
+.home-info h1,p,button{
+    margin: 20px 0;
+ font-weight: 500;
+ color: #fff;
+}
+.home-info h1{
+    color: red;
+    font-weight: 00;
+    font-size: 2.5rem;
+
+}
+.home-info_btn{
+    padding: 10px 35px ;
+    border-radius: 5px;
+    border: none;
+    background-color: #ce8f5b78;
+    cursor: pointer;
+    
+}
+.home-info_btn:hover{
+    background-color:#ef8a37cf ;
+    transition: 0.3s;
+}
+
+
+
+/* popular section 0 */
+.popular_movies{
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    background: url(../img/view-3d-cinema-elements.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+/* movie_details  */
+.movies_details{
+    width: 100%;
+        height: 100vh;
+    background: url(../img/movie_details.jpg) no-repeat;
+    background-size: cover;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+}
+/* comimg soon  */
+.coming_soon{
+    width: 100%;
+        height: 100vh;
+        background: url(../img/coming\ soon.jpg) no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+}
+/* Member  */
+.member {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/member.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+/* movie card  */
+.movie_cards {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/movie_cards.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
