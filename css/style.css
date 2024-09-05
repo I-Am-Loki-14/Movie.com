@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 
 }
-@media(max-width:1200px){
+@media(max-width:1260px){
     .nav-links li a{
         display: none;
     }
@@ -17,7 +17,7 @@
 }
 @media(min-width:400px){
     nav {
-            padding: 0 50px;
+            padding: 0 0px;
         }
 }
 
@@ -93,10 +93,9 @@ input[type="search"]{
    
 }
 .home-image{
-    /* width: 500px; */
     flex-basis: 800px;
     flex: 2 0 20rem;
-    /* height: 500px; */
+   
     background-color: red;
     background: url(../img/Tom-Holland-Spiderman.jpg) no-repeat;
     background-size: cover;
@@ -128,20 +127,14 @@ input[type="search"]{
 }
 .home-image_actor p{
     color: #fff;
-    /* line-height: 30px; */
 
 }
 .home-info {
     padding: 25px 30px;
-    /* width: 500px; */
+   
     flex-basis: 300px;
     flex: 1 0 20rem;
-    /* height: 500px; */
-    /* background-color: blue; */
-    /* backdrop-filter: blur(10px); */
-    /* border: 1px solid gray; */
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     text-align: start;
 
@@ -175,30 +168,193 @@ input[type="search"]{
 /* popular section 0 */
 .popular_movies{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: orange;
     background: url(../img/view-3d-cinema-elements.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
+    background-color: greenyellow;
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+}
+.popular_movies h1{
+    width: 100%;
+    text-align: center;
+   font-weight: 700;
+   font-size: 2.5rem;
+font-family: "Moderustic", system-ui;
+color: #fff;
+}
+
+.popular-movie_card{
+    width: 250px;
+    height: auto;
+    /* flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 200px; */
+    /* background-color: plum; */
+    backdrop-filter: blur(3px);
+    padding: 5px;
+   
+
+}
+
+.popular-movie_card h4,p{
+    color: #fff;
+    /* background-color: green; */
+    margin: 4px 0;
 }
 /* movie_details  */
 .movies_details{
     width: 100%;
-        height: 100vh;
+        min-height:100vh;
     background: url(../img/movie_details.jpg) no-repeat;
     background-size: cover;
         background-position: 50% 50%;
         background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+}
+.movies_details_card {
+    /* background-color: orange; */
+    width: 100%;
+    min-height: auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: green; */
+
+}
+
+.movies_details-image {
+    flex-basis: 800px;
+    flex: 2 0 20rem;
+
+    background-color: red;
+    height: 400px;
+    background: url(../img/army-soldiers-fighting-with-guns-defending-their-country.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    border-radius: px;
+
+}
+
+.movies_details-image:hover .movies_details-image_actor {
+    transform: translateX(0%);
+    transition: 0.4s;
+}
+
+.movies_details-image_actor {
+    padding: 20px;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    /* background-color: orange; */
+    /* opacity: 0.5; */
+    height: 100%;
+    transform: translateX(100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movies_details-image_actor>h1 {
+    /* color: red; */
+    margin: 15px 0;
+}
+
+.movies_details_actor p {
+    color: #fff;
+
+}
+
+.movies_details-info {
+    padding: 25px 30px;
+
+    flex-basis: 200px;
+    flex: 1 0 20rem;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    /* background-color: orchid; */
+
+}
+
+.movies_details-info h1,
+p,
+button {
+    margin: 20px 0;
+    font-weight: 500;
+    color: #fff;
+}
+
+.movies_details-info h1 {
+    color: red;
+    font-weight: 00;
+    font-size: 2.5rem;
+
+}
+
+.movies_details-info_btn {
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ce8f5b78;
+    cursor: pointer;
+
+}
+
+.movies_details-info_btn:hover {
+    background-color: #ef8a37cf;
+    transition: 0.3s;
 }
 /* comimg soon  */
 .coming_soon{
     width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         background: url(../img/coming\ soon.jpg) no-repeat;
         background-size: cover;
         background-position: 50% 50%;
         background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+}
+.coming_soon_container{
+    width:100%;
+    min-height: 100vh;
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem ;
+    padding:50px 10px;
+    flex-wrap: wrap;
+
+}
+.coming_soon_container_card{
+    width: 200px;
+    height: 300px;
+    /* background-color: orange; */
+    padding: 10px;
+    cursor: pointer;
+  
+    
+}
+.coming_soon_container_card h3,p{
+    margin: 3px 0;
 }
 /* Member  */
 .member {
