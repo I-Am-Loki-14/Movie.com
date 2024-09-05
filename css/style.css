@@ -10,14 +10,28 @@
 
 }
 @media(max-width:1260px){
-    .nav-links li a{
+    .nav-links li {
         display: none;
     }
+    nav h1{
+        display: none;
+    }
+        
     
 }
 @media(min-width:400px){
     nav {
             padding: 0 0px;
+        }
+}
+.menubar{
+    display: none;
+}
+@media(max-width:1260px){
+    .menubar {
+            display: block;
+            display: flex;
+            align-items: center;
         }
 }
 
@@ -34,7 +48,7 @@ header{
 nav{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 20px;
     background-color: #ce8f5b78;
     position: fixed;
@@ -46,11 +60,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin: 0 12px;
+ 
 }
 .nav-links li{
     /* background-color: #e5ad7f69; */
     margin: 0 7px;
-    padding: 5px 15px;
+    padding: 5px 12px;
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
@@ -246,6 +261,8 @@ color: #fff;
     background-position: 50% 50%;
     overflow: hidden;
     border-radius: px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(213, 211, 211, 0.556);
 
 }
 
@@ -268,9 +285,12 @@ color: #fff;
     align-items: center;
 }
 
-.movies_details-image_actor>h1 {
-    /* color: red; */
-    margin: 15px 0;
+.movies_details-image_actor > h1 {
+    color: red;
+    margin: 17px 0;
+    font-weight: 700;
+    font-size: 3.2rem;
+  
 }
 
 .movies_details_actor p {
@@ -309,13 +329,13 @@ button {
     padding: 10px 35px;
     border-radius: 5px;
     border: none;
-    background-color: #ce8f5b78;
+    background-color: #ff0000ad;
     cursor: pointer;
 
 }
 
 .movies_details-info_btn:hover {
-    background-color: #ef8a37cf;
+    background-color: #ff5757f2;
     transition: 0.3s;
 }
 /* comimg soon  */
@@ -337,24 +357,102 @@ button {
     min-height: 100vh;
     /* background-color: palevioletred; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:8rem ;
+    justify-content:space-between;
+    align-items: start;
+    /* gap:5rem ; */
     padding:50px 10px;
     flex-wrap: wrap;
 
 }
 .coming_soon_container_card{
     width: 200px;
-    height: 300px;
+    height: 350px;
     /* background-color: orange; */
     padding: 10px;
     cursor: pointer;
+ 
   
     
 }
 .coming_soon_container_card h3,p{
-    margin: 3px 0;
+    margin: 5px 0;
+    color: #fff;
+}
+.container_card-info{
+    width: 100%;
+    min-height: auto;
+    /* background-color: #00235D; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 1rem;
+}
+.container_card-info_1{
+    width: 600px;
+    height: 400px;
+    flex-basis: 600px;
+    background-color: #00235d78;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+ 
+}
+.container_card-info_1 h1{
+color: red;
+padding: 20px 0;
+}
+.container_card-info_1 button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #49494900;
+    cursor: pointer;
+    margin-top: 4.5rem;
+    align-items: center;
+    border: 1px solid grey;
+    box-shadow: inset 0 0px 10px #fff;
+}
+.container_card-info_2{
+    width: 600px;
+        height: 400px;
+        background-color: #00235d78;
+        flex-basis: 600px;
+        display: flex;
+      
+}
+.container_card-info_2_l{
+    width: 60%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+}
+.container_card-info_2_r{
+    width: 40%;
+    height: 100%;
+    background-color:brown;
+    background: url(../img/undraw_video_game_night_8h8m.svg) no-repeat;
+    background-size: cover;
+    background-position: 49% 60%;
+}
+.container_card-info_2 h1{
+    color: red;
+    padding: 15px 0;
+}
+.container_card-info_2 button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #49494900;
+    cursor: pointer;
+    margin-top: 4.5rem;
+    align-items: center;
+    border: 1px solid grey;
+    box-shadow: inset 0 0px 10px #fff;
 }
 /* Member  */
 .member {
