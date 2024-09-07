@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -13,7 +14,7 @@
     <!-- Home section start  -->
     <header id="home">
         <nav>
-            <i class="fa-solid fa-bars fa-2xl menubar" style="color: #080808;"></i>
+            <!-- <i class="fa-solid fa-bars fa-2xl menubar" style="color: #080808;"></i> -->
             <!-- <a href=""><i class="fa-solid fa-clapperboard fa-2xl" style="color: #0a51f5;"></i></a> -->
             <h1>Movie.com</h1>
             <ul class="nav-links">
@@ -26,8 +27,8 @@
             </ul>
             <!-- search movies  -->
 
-            <span><input type="search" placeholder="Search movies..." required autofocus>&ensp;&ensp;<a
-                    href="https://google.com" target="_blank" class="searchbar"><i
+            <span class="searchBar"><input type="search" placeholder="Search movies..." required
+                    autofocus>&ensp;&ensp;<a href="https://google.com" target="_blank" class="searchbar"><i
                         class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffff;"></i></a></span>
 
         </nav>
@@ -240,27 +241,27 @@
     <!-- Coming soon start  -->
     <section class="coming_soon" id="coming_soon">
         <div class="coming_soon_container">
-            <div class="coming_soon_container_card">
+            <div class="coming_soon_container_card" data-aos="fade-up" data-aos-interval="1550" data-aos-duration="300">
                 <img src="./img/Doctor-strange.jpg" height="70%" width="100%" alt="">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-            <div class="coming_soon_container_card">
+            <div class="coming_soon_container_card" data-aos="fade-up" data-aos-interval="1560" data-aos-duration="350">
                 <img src="./img/Doctor-strange.jpg" height="70%" width="100%" alt="">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-            <div class="coming_soon_container_card">
+            <div class="coming_soon_container_card" data-aos="fade-up" data-aos-interval="1570" data-aos-duration="400">
                 <img src="./img/Doctor-strange.jpg" height="70%" width="100%" alt="">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-            <div class="coming_soon_container_card">
+            <div class="coming_soon_container_card" data-aos="fade-up" data-aos-interval="1580" data-aos-duration="450">
                 <img src="./img/Doctor-strange.jpg" height="70%" width="100%" alt="">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor.</p>
             </div>
-            <div class="coming_soon_container_card">
+            <div class="coming_soon_container_card" data-aos="fade-up" data-aos-interval="1590" data-aos-duration="500">
                 <img src="./img/Doctor-strange.jpg" height="70%" width="100%" alt="">
                 <h3>Doctor Strange</h3>
                 <p>Lorem, ipsum dolor.</p>
@@ -293,7 +294,31 @@
 
     <!-- Member start  -->
     <section class="member" id="member">
+        <div class="member-container">
+            <form action="">
+                <h1>Are you member?</h1>
+                <p>Do you have already member?&ensp;<span><a href="####">Log in</a></span></p>
+                <div>
+                    <!-- <label for="">User name</label> -->
+                    <span class="user_name_span">
+                        <input type="text" placeholder="User name" required autofocus><i
+                            class="fa-solid fa-user fa-xl user-name" style="color: #0d0d0d;"></i>
+                    </span>
+                </div>
+                <div>
+                    <!-- <label for="">Password</label> -->
+                    <span class="user_name_span">
+                        <input type="password" placeholder="Password" required autofocus><i
+                            class="fa-solid fa-lock fa-xl user-name" style="color: #080808;"></i>
+                    </span>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
 
+            </form>
+
+        </div>
     </section>
     <!-- Member end  -->
     <!-- Movie cards -->
@@ -304,6 +329,10 @@
 
 
     <script src="./js/javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
